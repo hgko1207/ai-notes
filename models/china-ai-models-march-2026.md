@@ -118,4 +118,4 @@ AI 모델 경쟁은 언어 모델에만 국한되지 않습니다. 이미지 모
 ---
 **출처**: [조코딩 JoCoding - 주간 AI 뉴스](https://www.youtube.com/watch?v=fu6-y5seQlE)
 **작성일**: 2026-03-28
-**태그**: #중국AI #GLM5 #MiniMax #M2.7 #Xiaomi #MiMo #MidjourneyV8 #MAIImage2 #에이전틱벤치마크
+**태그**: 중국AI, GLM5, MiniMax, M2.7, Xiaomi, MiMo, Midjourney V8, MAI Image 2, 에이전틱벤치마크

@@ -113,4 +113,4 @@ Lovable, Replit 같은 기존 바이브 코딩 도구들은 배포와 인증을 
 ---
 **출처**: [조코딩 JoCoding - 주간 AI 뉴스](https://www.youtube.com/watch?v=fu6-y5seQlE)
 **작성일**: 2026-03-28
-**태그**: #구글AI스튜디오 #바이브코딩 #풀스택 #Stitch #바이브디자인 #Firebase종료 #Gemini3Flash
+**태그**: 구글 AI 스튜디오, 바이브코딩, 풀스택, Stitch, 바이브 디자인, Firebase 종료, Gemini 3 Flash

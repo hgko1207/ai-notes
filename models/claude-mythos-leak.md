@@ -79,4 +79,4 @@ Anthropic의 CMS 실수로 차세대 모델 정보가 유출된 것은 이례적
 ---
 **출처**: [조코딩 JoCoding - YouTube](https://www.youtube.com/@jocoding)
 **작성일**: 2026-03-30
-**태그**: #Claude #Mythos #Anthropic #에이전트AI #Capybara #Operon #사이버보안 #AI모델유출
+**태그**: Claude, Mythos, Anthropic, 에이전트 AI, Capybara, Operon, 사이버보안, AI 모델 유출

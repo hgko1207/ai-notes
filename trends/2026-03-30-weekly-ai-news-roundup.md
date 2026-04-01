@@ -29,4 +29,4 @@
 ---
 **출처**: [조코딩 JoCoding - 주간 AI 뉴스](https://www.youtube.com/watch?v=kvoOfdMlayk)
 **작성일**: 2026-03-30
-**태그**: #AI뉴스 #주간정리 #2026년3월
+**태그**: AI뉴스, 주간정리, 2026년3월

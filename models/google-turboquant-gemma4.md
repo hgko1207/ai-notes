@@ -117,4 +117,4 @@ TurboQuant가 적용된 Atomic Chat에서는 놀라운 결과가 나왔습니다
 ---
 **출처**: [조코딩 JoCoding - 주간 AI 뉴스](https://www.youtube.com/watch?v=kvoOfdMlayk)
 **작성일**: 2026-03-30
-**태그**: #TurboQuant #Gemma4 #Gemini #구글AI #KV캐시 #MoE #AgentSmith #음성AI #실시간번역 #Lyria3Pro
+**태그**: TurboQuant, Gemma 4, Gemini, 구글 AI, KV 캐시, MoE, Agent Smith, 음성 AI, 실시간 번역, Lyria 3 Pro

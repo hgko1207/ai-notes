@@ -130,4 +130,4 @@ Ahead Form이 공개한 휴머노이드 로봇 데모 영상은 충격적인 수
 ---
 **출처**: [조코딩 JoCoding - 주간 AI 뉴스](https://www.youtube.com/watch?v=kvoOfdMlayk)
 **작성일**: 2026-03-30
-**태그**: #ChatGPT광고 #PwC #AI도입 #MetaTribeV2 #SAM3 #휴머노이드 #유니트리 #AI직장변화 #주간AI뉴스
+**태그**: ChatGPT 광고, PwC, AI 도입, Meta Tribe V2, SAM 3, 휴머노이드, 유니트리, AI 직장변화, 주간AI뉴스

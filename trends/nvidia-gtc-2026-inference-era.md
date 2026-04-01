@@ -123,4 +123,4 @@ GTC 2026의 메시지는 명확합니다. AI 산업의 무게중심이 **"좋은
 ---
 **출처**: [조코딩 JoCoding - 주간 AI 뉴스](https://www.youtube.com/watch?v=fu6-y5seQlE)
 **작성일**: 2026-03-28
-**태그**: #NVIDIA #GTC2026 #VeraRubin #Groq #LPU #추론시대 #NEMOClaw #AI팩토리 #HBM4
+**태그**: NVIDIA, GTC 2026, Vera Rubin, Groq, LPU, 추론시대, NEMO Claw, AI 팩토리, HBM4

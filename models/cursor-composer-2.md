@@ -99,4 +99,4 @@ Cursor Composer 2는 기술적으로 인상적인 결과물이지만, 그 이면
 ---
 **출처**: [조코딩 JoCoding - 주간 AI 뉴스](https://www.youtube.com/watch?v=fu6-y5seQlE)
 **작성일**: 2026-03-28
-**태그**: #Cursor #Composer2 #KimiK2 #디스틸레이션 #AI생태계 #코딩모델 #MoonshotAI
+**태그**: Cursor, Composer 2, Kimi K2, 디스틸레이션, AI 생태계, 코딩모델, Moonshot AI
