@@ -18,13 +18,15 @@ M1 맥북 프로 16GB로 시작했지만 AI가 코드를 만드는 속도를 빌
 
 ### 2. 스토어 계정과 비용
 
-| 항목 | 내용 | 확인 결과 (2026-11-14) |
-|---|---|---|
-| Apple Developer Program | 연 12만 9천 원. 개인 기기 테스트는 무료라 출시 때 가입해도 됩니다 | 작성자 글 기준 |
-| Apple Ads 새 계정 크레딧 | 100달러 광고 크레딧으로 출시 직후 키워드 광고를 시험해 볼 수 있습니다 | **공식 도움말에서 확인**. 단, 앱스토어에 판매 중인 앱이 1개 이상 있어야 하고 광고 계정을 App Store Connect와 연결해야 합니다 |
-| Google Play 개발자 등록비 | 1회 약 2만 5천 원 | 작성자 글 기준 |
-| Google Play 개인 계정 테스트 조건 | 출시 전 앱마다 **12명이 14일 연속** 비공개 테스트에 참여해야 합니다 | **공식 문서에서 확인**. 2023-11-13 이후에 만든 개인 계정이 대상입니다 |
-| 사업자(조직) 계정 | D-U-N-S 번호(국제 사업자 등록번호)를 받아 조직 계정으로 등록하면 12명·14일 조건이 면제됩니다 | **공식 페이지에서는 확인하지 못했고** 여러 외부 글의 설명입니다. D-U-N-S 발급에 수일에서 한 달 정도 걸린다고 합니다 |
+| 항목 | 내용 |
+|---|---|
+| Apple Developer Program | 연 12만 9천 원. 개인 기기 테스트는 무료라 출시 때 가입해도 됩니다 |
+| Apple Ads 새 계정 크레딧 | 100달러 광고 크레딧으로 출시 직후 키워드 광고를 시험해 볼 수 있습니다 |
+| Google Play 개발자 등록비 | 1회 약 2만 5천 원 |
+| Google Play 개인 계정 테스트 조건 | 출시 전 앱마다 **12명이 14일 연속** 비공개 테스트에 참여해야 합니다 |
+| 사업자(조직) 계정 | D-U-N-S 번호(국제 사업자 등록번호)로 조직 계정을 만들면 12명·14일 조건이 면제된다고 합니다 |
+
+어디까지 공식으로 확인됐는지는 아래 "사실 확인" 표에 정리했습니다.
 
 ### 3. AI 도구 설정
 
@@ -73,23 +75,40 @@ infra/             ← 홈페이지 호스팅
 
 눈여겨볼 규칙:
 
-- **AGENTS.md가 기준 문서**이고 CLAUDE.md는 "AGENTS.md를 보라"는 한 줄만 둡니다. Claude Code와 Codex가 같은 지침을 읽습니다
+- **AGENTS.md가 기준 문서**이고 CLAUDE.md는 "AGENTS.md를 보라"는 한 줄만 둡니다. 다만 이렇게 글로만 가리키면 Claude Code는 AGENTS.md 내용을 **자동으로 읽지 않습니다**. CLAUDE.md에 `@AGENTS.md` 줄을 넣어 가져와야 시작할 때 함께 읽습니다 (아래 "사실 확인" 참고)
 - 앱 빌드는 **한 번에 최대 3개까지만** 병렬로 돌리고, 나머지는 줄을 세웁니다
 - 비밀 파일(.p8, keystore, 서비스 계정 JSON)은 저장소 밖 홈 폴더나 CI secret에 둡니다
 
-## 실전 활용 / 팁
+## 사실 확인
 
-- **스토어 출시를 계획 중이라면**: 구글 플레이 개인 계정의 12명·14일 조건 때문에 출시가 최소 2주 늦어집니다. 테스터를 미리 모으거나 사업자 계정을 검토하세요
-- **Apple Ads 크레딧**: 첫 앱이 스토어에 올라간 뒤에 받을 수 있으니, 출시 직후 키워드 반응을 보는 데 쓰면 좋습니다
-- **Claude와 Codex를 같이 쓴다면**: AGENTS.md를 기준으로 두고 CLAUDE.md가 가리키게 하는 방식을 바로 따라 할 수 있습니다
-- **공개 저장소를 운영한다면**: `check-sensitive.mjs`처럼 개인 식별자까지 검사하는 스크립트를 CI에 넣어 두면 실수로 개인 정보를 올리는 일을 막을 수 있습니다
-- **웹 앱 위주라면**: iOS 배포 스크립트보다 로드맵 먼저 쓰기, 반복 부품 재사용, 출시 전 체크리스트 같은 운영 방식이 더 쓸모 있습니다
+| 주장 | 상태 | 근거 |
+|---|---|---|
+| 2023-11-13 이후 만든 Google Play 개인 계정은 앱마다 12명이 14일 연속 비공개 테스트를 해야 출시할 수 있다 | 공식 확인 | [Google Play 고객센터](https://support.google.com/googleplay/android-developer/answer/14151465) |
+| Apple Ads 새 계정은 100달러 크레딧을 받는다. 판매 중인 앱 1개 이상, App Store Connect 연결이 필요하다 | 공식 확인 | [Apple Ads 도움말](https://searchads.apple.com/help/basic/0041-apple-search-ads-promo-credit/) |
+| 조직(D-U-N-S) 계정은 12명·14일 조건이 면제된다 | 출처만 | 여러 외부 글. 공식 페이지에서는 찾지 못함 |
+| D-U-N-S 발급에 수일에서 한 달 걸린다 | 출처만 | 외부 글 |
+| Apple Developer 연 12만 9천 원, Google Play 등록비 약 2만 5천 원 | 출처만 | 작성자 글 |
+| app-templates는 0BSD 라이선스다 | 공식 확인 | [app-templates 저장소](https://github.com/limsangjin12/app-templates) |
+| Claude Code는 CLAUDE.md가 있으면 AGENTS.md를 따로 읽지 않는다. 같이 쓰려면 CLAUDE.md에서 `@AGENTS.md`로 가져와야 한다 | 공식 확인 | [Claude Code 메모리 문서](https://code.claude.com/docs/en/memory.md), 2026-11-14 직접 실험(파일 도구를 막은 새 대화가 가져온 AGENTS.md 내용을 그대로 답함) |
+
+## 적용할 점
+
+| 대상 | 할 일 | 상태 |
+|---|---|---|
+| team-ai-kit | setup에 AGENTS 방식 추가. 단, "보라"는 글 대신 CLAUDE.md 첫 줄 `@AGENTS.md`로 가져오게 함 | 적용함 (v0.4.0, 커밋 7ff89e5·84772fe) |
+| team-ai-kit | 대화 압축 후 규칙 재주입 훅이 AGENTS.md 섹션도 다시 넣게 함 | 적용함 (v0.4.0) |
+| cc-checkup | CLAUDE.md의 `@AGENTS.md`를 따라가 검증 명령·필수 섹션을 판정 | 적용함 (PR #18, 병합 64a62ae) |
+| cc-checkup | CLAUDE.md 없이 AGENTS.md만 있는 저장소도 통과시키기 | 안 함 (이유: 키트가 이 경우 CLAUDE.md를 만들게 안내하고, 구버전 Claude Code는 AGENTS.md만으로는 읽지 못함) |
+| team-ai-kit | `check-sensitive.mjs`처럼 공개 저장소에 개인 식별자·키가 들어갔는지 CI에서 검사 | 검토 중 (키트에 비슷한 검사가 있는지 아직 확인 안 함) |
+| 개인 프로젝트 | 스토어에 앱을 낼 때 구글 플레이 12명·14일을 일정에 넣고, Apple Ads 크레딧은 첫 앱 판매 뒤 사용 | 검토 중 (스토어 출시 계획이 생기면) |
+| 개인 프로젝트 | ROADMAP.md 먼저 쓰고 한 단계씩 맡기기 | 안 함 (이유: 키트의 plan-feature와 plan.md가 이미 같은 역할) |
+| 개인 프로젝트 | 앱 모노레포와 iOS·Android 배포 스크립트 | 안 함 (이유: 지금은 네이티브 앱 계획이 없고 웹 위주) |
 
 ## 마무리
 
-글에는 작성자의 앱과 유튜브 채널 소개도 섞여 있습니다. 그래도 유료 상품이나 제휴 링크는 없고, 실제로 돌아가는 템플릿을 0BSD로 공개했다는 점에서 참고 가치가 큽니다. 가장 기억할 말은 "빨리 만들고, 빨리 출시하고, 사용자 반응을 보고, 쓸모 있는 앱만 남긴다"입니다.
+글에는 작성자의 앱과 유튜브 채널 홍보가 섞여 있습니다. 그래도 유료 상품이나 제휴 링크는 없고, 실제로 돌아가는 템플릿을 0BSD로 공개했다는 점에서 참고 가치가 큽니다. 가장 기억할 말은 "빨리 만들고, 빨리 출시하고, 사용자 반응을 보고, 쓸모 있는 앱만 남긴다"입니다.
 
 ---
 **출처**: [임상진 Threads 글 (15개 연속 글)](https://www.threads.com/@limsangjin12/post/DaIPtwElE97), [app-templates 저장소](https://github.com/limsangjin12/app-templates), [Google Play 개인 계정 테스트 요건](https://support.google.com/googleplay/android-developer/answer/14151465), [Apple Ads 프로모션 크레딧](https://searchads.apple.com/help/basic/0041-apple-search-ads-promo-credit/)
-**작성일**: 2026-11-14
+**작성일**: 2026-11-14 (2026-11-15 사실 확인·적용할 점 표 추가)
 **태그**: 바이브코딩, 앱공장, 모노레포, ClaudeCode, Codex, AGENTS.md, 앱스토어, 구글플레이
