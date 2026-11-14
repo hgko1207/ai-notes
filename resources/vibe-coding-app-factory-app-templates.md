@@ -99,7 +99,7 @@ infra/             ← 홈페이지 호스팅
 | team-ai-kit | 대화 압축 후 규칙 재주입 훅이 AGENTS.md 섹션도 다시 넣게 함 | 적용함 (v0.4.0) |
 | cc-checkup | CLAUDE.md의 `@AGENTS.md`를 따라가 검증 명령·필수 섹션을 판정 | 적용함 (PR #18, 병합 64a62ae) |
 | cc-checkup | CLAUDE.md 없이 AGENTS.md만 있는 저장소도 통과시키기 | 안 함 (이유: 키트가 이 경우 CLAUDE.md를 만들게 안내하고, 구버전 Claude Code는 AGENTS.md만으로는 읽지 못함) |
-| team-ai-kit | `check-sensitive.mjs`처럼 공개 저장소에 개인 식별자·키가 들어갔는지 CI에서 검사 | 검토 중 (키트에 비슷한 검사가 있는지 아직 확인 안 함) |
+| team-ai-kit | `check-sensitive.mjs`처럼 공개 저장소에 개인 식별자·키가 들어갔는지 CI에서 검사 | 검토 중 (2026-11-15 확인: 키트에는 Claude가 .env·키 파일을 고치지 못하게 막는 훅만 있고, 저장소 내용을 검사하는 CI는 없음. LLM 위키 개선 후보 "커밋 전 비밀정보 검사"와 같이 검토) |
 | 개인 프로젝트 | 스토어에 앱을 낼 때 구글 플레이 12명·14일을 일정에 넣고, Apple Ads 크레딧은 첫 앱 판매 뒤 사용 | 검토 중 (스토어 출시 계획이 생기면) |
 | 개인 프로젝트 | ROADMAP.md 먼저 쓰고 한 단계씩 맡기기 | 안 함 (이유: 키트의 plan-feature와 plan.md가 이미 같은 역할) |
 | 개인 프로젝트 | 앱 모노레포와 iOS·Android 배포 스크립트 | 안 함 (이유: 지금은 네이티브 앱 계획이 없고 웹 위주) |
