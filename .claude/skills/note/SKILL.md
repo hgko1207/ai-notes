@@ -9,7 +9,7 @@ user_invocable: true
 
 사용자가 제공한 소스를 읽고 **확인한 사실**과 **우리에게 적용할 점**을 노트로 남긴다. 기준은 프로젝트 CLAUDE.md의 "쓰는 것 / 쓰지 않는 것"을 따른다. 소식만 옮기는 요약과 주간 뉴스 총정리는 쓰지 않는다.
 
-적용 대상: team-ai-kit, cc-checkup, ai-setup-service(AI 코딩 팀 세팅 사업), 개인 프로젝트 (모두 `D:\project\Coding\` 아래).
+적용 대상: cc-ready(예전 team-ai-kit, 키트 원본은 `ai-setup-service\kit`), cc-checkup, ai-setup-service(AI 코딩 팀 세팅 사업), 개인 프로젝트 (모두 `D:\project\Coding\` 아래).
 
 ## 실행 절차
 
@@ -71,7 +71,7 @@ user_invocable: true
 **태그**: 태그1, 태그2, 태그3
 ```
 
-- "적용함"이면 커밋·버전·PR 번호를 함께 적는다 (예: 적용함 (team-ai-kit v0.4.0)).
+- "적용함"이면 커밋·버전·PR 번호를 함께 적는다 (예: 적용함 (cc-ready v0.6.0)).
 - 나중에 실제로 적용하면 기존 노트의 "적용할 점" 표 상태를 고친다.
 
 ### 문체
